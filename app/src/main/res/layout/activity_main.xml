@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jubayernil.encdec.MainActivity">
+
+    <TextView
+        android:padding="30dp"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/holo_orange_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="File Encryption and Decryption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/inputTextEt"
+        android:padding="15dp"
+        android:textSize="22sp"
+        android:hint="Write something here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="saveText"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:text="Save Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/outputTextTv"
+        android:hint="Output Text ..."
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="showText"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:text="Show Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="encryptFile"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:text="Encrypt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="decryptFile"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:text="Decrypt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="22sp"
+            android:text="File State: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fileStateTv"
+            android:textSize="22sp"
+            android:hint="Encrypted / Decrypted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
